@@ -1,0 +1,24 @@
+Coluna,Tipo,Descrição,Observação
+idMatch,chave,"Identificador único de uma partida","Útil caso queira cruzar com outros dados da FIFA. Ex.: eventos da partida",
+idMatchIfes,chave,"Identificador interno da FIFA",""
+idCompetition,chave,"Identificador da competição que partida foi realizada","Útil caso queria agrupar informações por competições. Agrupar por identificador é sempre mais fácil que por nomes, pois nomes nem sempre estão normalizados"
+competitionName,categórico,"Nome da competição que partida foi realizada. Ex.: FIFA World Cup™", "Fornece um contexto legível sobre a competição"
+idSeason,chave,"Identificador da competição na data que partida foi realizada", "Útil caso queria agrupar informações por competições de um mesmo período. Agrupar por identificador é sempre mais fácil que por nomes, pois nomes nem sempre estão normalizados"
+seasonName,categórico,"Nome da competição na data que partida foi realizada. Ex.: FIFA World Cup 2026™", "Fornece um contexto legível sobre a competição de dado período"
+idStage,chave,"Identificador da fase da competição que partida foi realizada", "Útil caso queria agrupar informações por fases. Agrupar por identificador é sempre mais fácil que por nomes, pois nomes nem sempre estão normalizados"
+stageName,categórico,"Nome da fase da competição que partida foi realizada. Ex.: Final", "Fornece um contexto legível sobre a fase"
+matchDate,datetime,"Data que a partida foi realizada","Útil para separar e agrupar intervalos"
+teamAId,chave,"Identificador único de uma seleção","Pode se utilizado para identificar o vencedor da partida consultando a coluna `winner`",
+teamAName,texto,"Nome da seleção","Fornece um contexo legível sobre a seleção",
+teamACountryCode,texto,"Nome abreviado da seleção 'A'","",
+teamAScore,"numérico discreto","A quantidade de gols da seleção 'A' na partida","",
+teamAPenaltyScore,"numérico discreto","A quantidade de gols da seleção 'A' em caso de disputas de pênaltis","",
+teamBId,chave,"Identificador único de uma seleção","Pode se utilizado para identificar o vencedor da partida consultando a coluna `winner`",
+teamBName,texto,"Nome da seleção 'B'","Fornece um contexo legível sobre a seleção",
+teamBCountryCode,texto,"Nome abreviado da seleção 'B'","",
+teamBScore,"numérico discreto","A quantidade de gols da seleção 'B' na partida","",
+teamBPenaltyScore,"numérico discreto","A quantidade de gols da seleção 'B' em caso de disputas de pênaltis","",
+resultType,categórico,"Indica o resultado final da partida. Ex.: empate, vitória no tempo normal, vitória na prorrogação, vitória nos pênaltis",
+winner,chave,"Indica, caso haja, quem foi o vencedor da partida","",
+stadiumName,texto,"Nome do estádio que a partida foi disputada","",
+hasPenalties,boolean,"Indica se houve disputa de pênaltis","" 
