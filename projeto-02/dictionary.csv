@@ -21,4 +21,4 @@ teamBPenaltyScore,"numérico discreto","A quantidade de gols da seleção 'B' em
 resultType,categórico,"Indica o resultado final da partida. Ex.: empate, vitória no tempo normal, vitória na prorrogação, vitória nos pênaltis",""
 winner,chave,"Indica, caso haja, quem foi o vencedor da partida",""
 stadiumName,texto,"Nome do estádio que a partida foi disputada",""
-hasPenalties,boolean,"Indica se houve disputa de pênaltis","" 
+hasPenalties,boolean,"Indica se houve disputa de pênaltis",""
